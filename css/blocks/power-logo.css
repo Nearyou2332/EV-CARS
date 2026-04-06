@@ -1,0 +1,12 @@
+.power-logo {
+	height: 100%;
+	background-color: #fff;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.power-logo__img {
+	object-fit: contain;
+}

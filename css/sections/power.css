@@ -1,0 +1,18 @@
+.power {
+	padding: clamp(2rem, -0.182rem + 10.91vw, 8rem) 0;
+
+	background: var(--primary-color);
+}
+
+
+.power__header {
+	/* margin-bottom: 45px; */
+	margin-bottom: clamp(1.375rem, 0.511rem + 4.32vw, 3.75rem);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+
+	text-align: center;
+}

@@ -1,0 +1,39 @@
+.figure {
+	position: relative;
+
+	font-weight: 700;
+	/* font-size: 236px; */
+	/* font-size: clamp(3.125rem, -2.511rem + 28.18vw, 10.75rem); */
+	/* font-size: 16vw; */
+	font-size: 12vw;
+	letter-spacing: 0.04em;
+	text-align: center;
+	text-wrap: nowrap;
+}
+.figure__line-1 {
+	color: var(--primary-color);
+	-webkit-text-stroke: 5px var(--primary-color);
+}
+
+.figure__line-2 {
+	color: var(--background-color-3);
+	-webkit-text-stroke: 5px var(--background-color-3);
+}
+
+.figure__img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 40vw;
+}
+
+@media (max-width: 768px) {
+	.figure__line-1 {
+		-webkit-text-stroke: 0px var(--primary-color);
+	}
+	.figure__line-2 {
+		-webkit-text-stroke: 0px var(--background-color-3);
+	}
+}

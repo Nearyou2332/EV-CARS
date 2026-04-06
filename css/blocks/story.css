@@ -1,0 +1,72 @@
+.story__heading {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 36px;
+  font-size: 18px;
+  text-align: center;
+  color: var(--primary-color);
+  background: var(--background-color-2);
+}
+
+.story__content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, auto);
+  row-gap: 60px;
+  column-gap: 20px;
+}
+
+.stiry__title {
+  grid-column: span 8;
+  font-size: 60px;
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+
+.story__text {
+  grid-column: span 4;
+  font-size: 18px;
+  color: var(--subtext-color);
+}
+
+.story__media {
+  grid-column: span 6;
+}
+
+.story__img {
+  margin-bottom: 97px;
+}
+
+.story__subtitle {
+  margin-bottom: 16px;
+  font-size: 36px;
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+
+.story__action {
+  grid-column: span 6;
+  display: flex;
+  align-items: end;
+  padding: 24px;
+  background-image: url(./../../img/story/Card.jpg);
+}
+.story__action-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 24px;
+  border: 1px solid var(--white-transparent-1);
+  backdrop-filter: blur(20px);
+  background: var(--white-transparent-2);
+}
+
+.story__subtitle--white {
+  margin-bottom: 10px;
+  color: var(--background-color-1);
+}
+
+.story__text--white {
+  margin-bottom: 32px;
+  color: var(--background-color-1);
+}

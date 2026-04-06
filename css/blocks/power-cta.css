@@ -1,0 +1,68 @@
+.power-cta {
+	position: relative;
+	height: 100%;
+	padding: clamp(0.75rem, 0.477rem + 1.36vw, 1.5rem);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 30px;
+
+	overflow: hidden;
+	background: var(--secondary-color);
+	color: #000;
+}
+
+.power-cta::before {
+	content: '';
+	position: absolute;
+	inset: -10%;
+	background: repeating-radial-gradient(
+		circle at right top,
+		rgba(0, 0, 0, 0.1) 0px,
+		rgba(0, 0, 0, 0.1) 12px,
+		/* transparent 2px, */ transparent 12px,
+		transparent 26px
+	);
+	opacity: 0.5;
+	z-index: 0;
+}
+
+.power-cta__pill {
+	position: relative;
+	z-index: 1;
+	align-self: flex-start;
+
+	padding: 6px 10px;
+
+	background: #000;
+	font-weight: 400;
+	/* font-size: 18px; */
+	font-size: clamp(0.875rem, 0.784rem + 0.45vw, 1.125rem);
+	color: var(--background-color-1);
+}
+
+.power-cta__content {
+	position: relative;
+	z-index: 1;
+}
+
+.power-cta__value {
+	display: block;
+	margin-bottom: 10px;
+
+	font-weight: 600;
+	font-size: 80px;
+	font-size: clamp(2.5rem, 1.591rem + 4.55vw, 5rem);
+	text-transform: uppercase;
+	line-height: 1;
+	color: var(--primary-color);
+	font-variant-numeric: lining-nums tabular-nums;
+}
+
+.power-cta__desc {
+	font-weight: 400;
+	/* font-size: 24px; */
+	font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
+	color: var(--primary-color);
+}

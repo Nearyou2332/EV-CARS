@@ -1,0 +1,65 @@
+
+.power-hero {
+	position: relative;
+	height: 100%;
+	min-height: clamp(18rem, 12.136rem + 25.03vw, 32rem);
+
+	padding: clamp(2rem, 1.091rem + 4.55vw, 4.5rem) clamp(1rem, 0.636rem + 1.82vw, 2rem);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: #fff;
+	background-image: url('../../img/power/hero.jpg');
+	background-image: image-set(
+		url('../../img/power/hero.jpg') 1x,
+		url('../../img/power/hero@2x.jpg') 2x
+	);
+	background-size: cover;
+	background-position: center;
+}
+
+.power-hero::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(270deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.25) 70%, rgba(0, 0, 0, 0.05) 100%);
+}
+
+.power-hero__brand {
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+	font-weight: 400;
+	font-size: clamp(1rem, 0.955rem + 0.19vw, 1.1rem);
+}
+
+.power-hero__brand-name {
+	font-size: 24px;
+}
+
+.power-hero__brand-icon {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	background: var(--secondary-color);
+}
+
+.power-hero__brand-icon img {
+	width: 60%;
+	height: 60%;
+	object-fit: contain;
+}
+
+.power-hero__title {
+	position: relative;
+	z-index: 1;
+	font-size: clamp(2.6rem, 1.86rem + 3.16vw, 4.5rem);
+	font-weight: 600;
+	line-height: 1.05;
+	text-transform: uppercase;
+}

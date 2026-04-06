@@ -1,0 +1,21 @@
+.detail {
+	flex: 1;
+	display: flex;
+	gap: 22px;
+	align-items: center;
+}
+
+.detail__value {
+	font-weight: 600;
+	font-size: clamp(1.5rem, 0.227rem + 6.36vw, 5rem);
+	text-transform: uppercase;
+	color: var(--primary-color);
+	font-variant-numeric: lining-nums tabular-nums;
+}
+
+.detail__desc {
+	font-weight: 400;
+	/* font-size: 24px; */
+	font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
+	color: var(--subtext-color);
+}

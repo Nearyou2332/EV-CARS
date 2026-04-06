@@ -1,0 +1,27 @@
+.hero {
+	padding-top: 32px;
+}
+
+.hero__picture {
+	/* margin-top: 98px; */
+	margin-top: clamp(2rem, 0.5rem + 7.5vw, 6.125rem);
+}
+
+.hero__details {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 50px;
+
+	margin-top: clamp(2rem, 1.023rem + 4.89vw, 4.688rem);
+	padding-top: clamp(2rem, 1.023rem + 4.89vw, 4.688rem);
+
+	border-top: 1px solid var(--background-color-3);
+}
+
+@media (max-width: 768px) {
+	.hero__details {
+		gap: 22px;
+	}
+}

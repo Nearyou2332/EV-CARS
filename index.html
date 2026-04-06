@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EV Cars</title>
+	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+	<link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		<symbol id="arrow-top" width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+			<path d="M1.21221 0H13.6977V12.4854H12.297V2.39516L0.994515 13.6977L0 12.7037L11.3031 1.40065H1.21221V0Z" />
+		</symbol>
+		<symbol id="burger" viewBox="0 0 800 800" fill="none">
+			<path d="M166.667 400H600" stroke="black" stroke-width="66.6667" stroke-linecap="square" />
+			<path d="M400 566.667H600" stroke="black" stroke-width="66.6667" stroke-linecap="square" />
+			<path d="M266.667 233.333H600" stroke="black" stroke-width="66.6667" stroke-linecap="square" />
+		</symbol>
+		<symbol id="play" viewBox="0 0 64 64" fill="none">
+			<path d="M0 0H64V64H0V0Z" fill="#E9FF61" />
+			<path d="M17 14L47 32L17 50V14Z" fill="black" />
+		</symbol>
+		<symbol id="power" viewBox="0 0 42 42" fill="none">
+			<path
+				d="M42 21C42 32.598 32.598 42 21 42C9.40202 42 0 32.598 0 21C0 9.40202 9.40202 0 21 0C32.598 0 42 9.40202 42 21Z"
+				fill="#E9FF61" />
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M21.0968 33.6566C28.5259 33.6566 34.5484 27.6341 34.5484 20.205C34.5484 12.7758 28.5259 6.75334 21.0968 6.75334C13.6677 6.75334 7.64516 12.7758 7.64516 20.205C7.64516 27.6341 13.6677 33.6566 21.0968 33.6566ZM21.0968 35.3017C29.4345 35.3017 36.1936 28.5427 36.1936 20.205C36.1936 11.8672 29.4345 5.10818 21.0968 5.10818C12.7591 5.10818 6 11.8672 6 20.205C6 28.5427 12.7591 35.3017 21.0968 35.3017Z"
+				fill="black" />
+			<path d="M17.9398 36.4474L20.4036 22.593H14.2249L24.2533 3.96327L21.7895 17.0439H27.9682L17.9398 36.4474Z"
+				fill="black" />
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M19.7452 37.3804L15.939 36.0915L17.978 24.6253H10.823L22.4638 3L26.2504 4.33943L24.2403 15.0116H31.3062L19.7452 37.3804ZM21.7895 17.0439L24.2533 3.96327L14.2249 22.593H20.4036L17.9398 36.4474L27.9682 17.0439H21.7895Z"
+				fill="#E9FF61" />
+		</symbol>
+		<symbol id="cell" viewBox="0 0 38 61" fill="none">
+			<path
+				d="M35.0488 5.16529H27.1332V1.89999C27.1332 0.850655 26.2826 0 25.2332 0H12.4358C11.3865 0 10.5359 0.850655 10.5359 1.89999V5.16529H2.62029C1.24515 5.16529 0 6.2873 0 7.77873V58.1797C0 59.5548 1.12201 60.8 2.62029 60.8H35.0488C36.4239 60.8 37.6691 59.678 37.6691 58.1797V7.65559C37.6691 6.2873 36.4239 5.16529 35.0488 5.16529ZM28.1937 32.8595L13.8471 48.328L17.9645 36.3269L9.3523 32.8595L23.5757 17.391L18.7676 28.898L28.1937 32.8595Z"
+				fill="white" />
+		</symbol>
+	</svg>
+
+	<header class="hero">
+		<div class="container container--wide">
+			<nav class="nav">
+				<a class="nav__logo" href="#">
+					<img src="./img/logo/logo.png" srcset="./img/logo/logo@2x.png 2x" alt="" class="nav__logo-img">
+				</a>
+
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#!" class="nav__link">Home</a>
+					</li>
+					<li class="nav__item">
+						<a href="#!" class="nav__link">Products</a>
+					</li>
+					<li class="nav__item">
+						<a href="#!" class="nav__link">Features</a>
+					</li>
+					<li class="nav__item">
+						<a href="#!" class="nav__link">Gear Shop</a>
+					</li>
+				</ul>
+
+				<div class="nav__btn">
+					<a href="#" class="button">
+						Order Now
+						<svg class="button__icon" aria-hidden="true">
+							<use href="#arrow-top"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="nav__mobile">
+					<button>
+						<svg class="nav__mobile-icon">
+							<use href="#burger"></use>
+						</svg>
+					</button>
+				</div>
+			</nav>
+		</div>
+
+		<div class="container">
+			<div class="hero__picture none">
+				<img src="./img/hero/content.png" srcset="./img/hero/content@2x.png" alt="">
+			</div>
+
+			<div class="hero__picture">
+
+				<!-- <div class="figure">
+					<div class="figure__line-1">SMOOTH</div>
+					<div class="figure__line-2">EV CARS</div>
+					<img src="" alt="" src="./img/hero/hero-img.png" srcset="./img/hero/hero-img@2x.png 2x" class="figure__img">
+				</div> -->
+
+				<img src="./img/hero/content.png" srcset="./img/hero/content@2x.png 2x" alt="">
+			</div>
+
+			<div class="hero__details">
+				<div class="detail">
+					<div class="detail__value">14m</div>
+					<div class="detail__desc">Battery Cost Reduction</div>
+				</div>
+				<div class="detail">
+					<div class="detail__value">89%</div>
+					<div class="detail__desc">Battery Cost Reduction</div>
+				</div>
+				<div class="detail">
+					<div class="detail__value">1.2M</div>
+					<div class="detail__desc">Charging infrastructure Expansion</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="features ">
+		<div class="container">
+
+			<header class="features__header">
+				<div class="tag">Versatile Power</div>
+				<h2 class="title">Discover Our Multi-functional chargers</h2>
+			</header>
+
+			<div class="features__grid">
+
+				<article class="card">
+					<img src="./img/features/01.jpg" srcset="./img/features/01@2x.jpg 2x" alt="" class="card__img">
+					<div class="card__content">
+						<h3 class="card__title">Home Smart Charger</h3>
+						<p class="card__text">A lightweight, travel-friendly Level 1 charger designed for convenience.
+							Plugs into standard wall outlets.</p>
+						<div class="card__price-wrapper">
+							<span class="card__old-price">$999</span>
+							<span class="card__price">$599</span>
+						</div>
+					</div>
+				</article>
+
+				<article class="card">
+					<img src="./img/features/02.jpg" srcset="./img/features/02@2x.jpg 2x" alt="" class="card__img">
+					<div class="card__content">
+						<h3 class="card__title">Home Smart Charger</h3>
+						<p class="card__text">A lightweight, travel-friendly Level 1 charger designed for convenience.
+							Plugs into standard wall outlets.</p>
+						<div class="card__price-wrapper">
+							<span class="card__old-price">$999</span>
+							<span class="card__price">$599</span>
+						</div>
+					</div>
+				</article>
+
+				<article class="card">
+					<img src="./img/features/03.jpg" srcset="./img/features/03@2x.jpg 2x" alt="" class="card__img">
+					<div class="card__content">
+						<h3 class="card__title">Home Smart Charger</h3>
+						<p class="card__text">A lightweight, travel-friendly Level 1 charger designed for convenience.
+							Plugs into standard wall outlets.</p>
+						<div class="card__price-wrapper">
+							<span class="card__old-price">$999</span>
+							<span class="card__price">$599</span>
+						</div>
+					</div>
+				</article>
+
+			</div>
+
+
+		</div>
+	</section>
+
+	<section class="story ">
+		<div class="container">
+
+			<header class="story__header">
+				<div class="tag">Versatile Power</div>
+
+				<div class="story__header-title-wrapper">
+
+					<h2 class="title">Discover Our Multi-functional chargers</h2>
+					<p class="story__header-desc">We are here to support your journey towards sustainable driving.
+						Explore
+						cutting-edge EV technology, a growing charging
+						network, and exclusive resources designed to enhance your electric vehicle experience.</p>
+				</div>
+			</header>
+
+			<!-- story__grid -->
+			<div class="story__grid">
+
+				<article class="card-media">
+					<div class="card-media__video-wrapper">
+						<img src="./img/story/video.jpg" srcset="./img/story/video@2x.jpg 2x" alt=""
+							class="card-media__img">
+						<button class="card-media__video-button">
+							<svg class="icon-play">
+								<use href="#play"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="card-media__content">
+						<h3 class="card-media__title">Join a Connected Charging Network</h3>
+						<p class="card-media__desc">Be part of a growing network of EV drivers who share a passion for
+							sustainability and innovation.</p>
+					</div>
+
+				</article>
+
+				<article class="card-story">
+					<div class="card-story__bg">
+						<img src="./img/story/story-bg.jpg" srcset="./img/story/story-bg@2x.jpg 2x" alt=""
+							class="card-story__bg-img">
+					</div>
+
+					<div class="card-story__content">
+
+						<h3 class="card-story__title">EVs for Everyone</h3>
+						<p class="card-story__desc">From eco-conscious drivers to performance enthusiasts, we believe
+							electric vehicles should be accessible and exciting for all.</p>
+						<div class="card-story__btn">
+							<a href="#" class="button">Our Story</a>
+						</div>
+					</div>
+
+				</article>
+			</div>
+			<!-- // story__grid -->
+
+		</div>
+	</section>
+
+	<section class="power ">
+		<div class="container">
+			<header class="power__header">
+				<div class="tag tag--white">Versatile Power</div>
+				<h2 class="title title--white">Revolutionizing EV Mobility</h2>
+			</header>
+
+			<div class="power-grid">
+
+				<div class="power-grid__item power-grid__item--stats">
+
+					<div class="power-stats">
+						<div class="power-stats__header">
+							<div class="power-stats__header-wrapper">
+								<h4 class="power-stats__title">What People Say</h4>
+								<div class="power-stats__subtitle">Sold to over 20M</div>
+							</div>
+							<svg class="icon-power">
+								<use href="#power"></use>
+							</svg>
+						</div>
+
+
+
+						<div class="power-stats__footer">
+
+							<div class="power-avatars">
+								<div class="power-avatars__list">
+									<span class="power-avatars__item">
+										<img src="./img/power/avatar-1.jpg" alt="EV owner avatar 1">
+									</span>
+									<span class="power-avatars__item">
+										<img src="./img/power/avatar-2.jpg" alt="EV owner avatar 2">
+									</span>
+								</div>
+								<p class="power-avatars__text">3,000+ Thrilled EV Owners</p>
+							</div>
+
+							<div class="power-stats__value">$50k+</div>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+				<div class="power-grid__item power-grid__item--cta">
+
+					<div class="power-cta">
+						<span class="power-cta__pill">evvoltage.com</span>
+						<div class="power-cta__content">
+							<span class="power-cta__value">500+</span>
+							<p class="power-cta__desc">Miles Per Charge</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="power-grid__item power-grid__item--logo">
+					<div class="power-logo">
+						<img src="./img/power-grid/logo.png" srcset="./img/power-grid/logo@2x.png 2x"
+							alt="EV Voltedge logo" class="power-logo__img">
+					</div>
+				</div>
+
+				<div class="power-grid__item power-grid__item--tagline">
+					<div class="power-tagline">
+						<svg class="icon-cell">
+							<use href="#cell"></use>
+						</svg>
+						<p>Empowering Sustainable Mobility Through Innovation</p>
+					</div>
+				</div>
+
+				<div class="power-grid__item power-grid__item--hero">
+					<div class="power-hero">
+						<div class="power-hero__brand">
+							<span class="power-hero__brand-icon">
+								<svg class="icon-power-small">
+									<use href="#power"></use>
+								</svg>
+							</span>
+							<span class="power-hero__brand-name">EV Voltedge</span>
+						</div>
+						<h3 class="power-hero__title">Electric<br>Mobility</h3>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<section class="gallery ">
+		<div class="container">
+			<header class="gallery__header">
+				<div class="tag">Versatile Power</div>
+				<h2 class="title">Discover Our Multi-functional chargers</h2>
+			</header>
+		</div>
+
+		<!-- Swiper slider -->
+		<!-- Slider main container -->
+		<div class="swiper">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<img class="swiper-img" src="./img/slider/01.jpg" srcset="./img/slider/01@2x.jpg 2x" alt="Photo">
+				</div>
+				<div class="swiper-slide">
+					<img class="swiper-img" src="./img/slider/02.jpg" srcset="./img/slider/02@2x.jpg 2x" alt="Photo">
+				</div>
+				<div class="swiper-slide">
+					<img class="swiper-img" src="./img/slider/03.jpg" srcset="./img/slider/03@2x.jpg 2x" alt="Photo">
+				</div>
+				<div class="swiper-slide">
+					<img class="swiper-img" src="./img/slider/01.jpg" srcset="./img/slider/01@2x.jpg 2x" alt="Photo">
+				</div>
+				<div class="swiper-slide">
+					<img class="swiper-img" src="./img/slider/02.jpg" srcset="./img/slider/02@2x.jpg 2x" alt="Photo">
+				</div>
+				<div class="swiper-slide">
+					<img class="swiper-img" src="./img/slider/03.jpg" srcset="./img/slider/03@2x.jpg 2x" alt="Photo">
+				</div>
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+
+	</section>
+
+	<section class="book">
+		<div class="container">
+			<div class="book__wrapper">
+				<div class="book__form-wrapper">
+					<h2 class="book__form__title">Reserve Your EV Today!</h2>
+
+					<form class="form">
+						<!-- Row 1 -->
+						<div class="form__row">
+							<div class="form__input-wrapper">
+								<label for="firstName" class="label">First Name</label>
+								<input type="text" class="input" id="firstName" placeholder="John" autocomplete="off">
+							</div>
+							<div class="form__input-wrapper">
+								<label for="lastName" class="label">Last Name</label>
+								<input id="lastName" type="text" class="input" placeholder="Doe" autocomplete="off">
+							</div>
+						</div>
+
+						<!-- Row 2 -->
+						<div class="form__input-wrapper">
+							<label for="email" class="label">Email ID</label>
+							<input type="email" class="input" id="email" placeholder="Field email goes here"
+								autocomplete="off">
+						</div>
+
+						<!-- Row 3 -->
+						<div class="form__input-wrapper">
+							<label for="message" class="label">Message</label>
+							<textarea name="message" class="textarea" id="message" placeholder="Message"></textarea>
+						</div>
+
+						<button class="button button--order">Book Now</button>
+					</form>
+				</div>
+				<div class="book__img-wrapper">
+					<img src="./img/book/car.jpg" srcset="./img/book/car@2x.jpg 2x" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container container--wide">
+			<div class="footer__content">
+				<div class="footer__inner">
+					<div class="footer__col footer__col--brand">
+						<a class="footer__logo" href="#">
+							<img src="./img/logo/logo-footer.png" srcset="./img/logo/logo-footer@2x.png 2x"
+								alt="EV Voltedge">
+						</a>
+					</div>
+
+					<div class="footer__right-cols">
+						<div class="footer__col">
+							<h4 class="footer__heading">Company</h4>
+							<ul class="footer__nav-list">
+								<li class="footer__nav-item"><a class="footer__nav-link" href="#">Features</a></li>
+								<li class="footer__nav-item"><a class="footer__nav-link" href="#">Pricing</a></li>
+								<li class="footer__nav-item"><a class="footer__nav-link" href="#">About Us</a></li>
+								<li class="footer__nav-item"><a class="footer__nav-link" href="#">Contact</a></li>
+								<li class="footer__nav-item"><a class="footer__nav-link" href="#">Pricing</a></li>
+							</ul>
+						</div>
+
+						<div class="footer__col">
+							<h4 class="footer__heading">Resource</h4>
+							<ul class="footer__nav-list">
+								<li class="footer__nav-item"><a class="footer__nav-link" href="#">Blog</a></li>
+								<li class="footer__nav-item"><a class="footer__nav-link" href="#">Customer Stories</a>
+								</li>
+								<li class="footer__nav-item"><a class="footer__nav-link" href="#">Information</a></li>
+								<li class="footer__nav-item"><a class="footer__nav-link" href="#">Legal</a></li>
+								<li class="footer__nav-item"><a class="footer__nav-link" href="#">Payments</a></li>
+							</ul>
+						</div>
+
+						<div class="footer__col">
+							<h4 class="footer__heading">Career</h4>
+							<ul class="footer__nav-list">
+								<li class="footer__nav-item"><a class="footer__nav-link" href="#">Jobs</a></li>
+								<li class="footer__nav-item"><a class="footer__nav-link" href="#">Hiring</a></li>
+								<li class="footer__nav-item"><a class="footer__nav-link" href="#">News</a></li>
+								<li class="footer__nav-item"><a class="footer__nav-link" href="#">Tips &amp; Tricks</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer__col">
+							<h4 class="footer__heading">Help</h4>
+							<ul class="footer__nav-list">
+								<li class="footer__nav-item"><a class="footer__nav-link" href="#">FAQs</a></li>
+								<li class="footer__nav-item"><a class="footer__nav-link" href="#">Help Center</a></li>
+								<li class="footer__nav-item"><a class="footer__nav-link" href="#">Support</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="footer__bottom">
+					<p class="footer__copyright">© <span class="footer__year">2025</span> EV Voltedge. All rights
+						reserved.</p>
+					<ul class="footer__bottom-links">
+						<li><a class="footer__bottom-link" href="#">Privacy</a></li>
+						<li><a class="footer__bottom-link" href="#">Terms</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./libs/swiper/swiper-bundle.min.js"></script>
+	<script src="./js/main.js"></script>
+
+</body>
+
+</html>

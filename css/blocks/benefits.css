@@ -1,0 +1,64 @@
+.benefits__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits__heading {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  text-align: center;
+  color: var(--primary-color);
+  background: var(--background-color-2);
+}
+
+.benefits_title {
+  margin-bottom: 45px;
+  font-size: 60px;
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+
+.benefits__list {
+  display: flex;
+  gap: 20px;
+}
+
+.benefits__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits__img {
+  margin-bottom: 20px;
+}
+
+.benefits__subtitle {
+  margin-bottom: 16px;
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.benefits__text {
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: var(--subtext-color);
+}
+
+.benefits__price-wrapper {
+  display: flex;
+  gap: 9px;
+}
+
+.benefits__price {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.benefits__price--full {
+  color: var(--subtext-color);
+}

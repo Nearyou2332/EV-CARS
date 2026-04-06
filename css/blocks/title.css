@@ -1,0 +1,11 @@
+.title {
+	font-weight: 400;
+	/* font-size: 60px; */
+	font-size: clamp(2rem, 1.364rem + 3.18vw, 3.75rem);
+	text-transform: capitalize;
+	color: var(--primary-color);
+}
+
+.title--white {
+	color: var(--background-color-1);
+}

@@ -1,0 +1,25 @@
+.tag {
+	display: inline-block;
+
+	padding: 10px 20px;
+
+	background: var(--background-color-2);
+
+	font-family: var(--font-family);
+	font-weight: 400;
+	/* font-size: 18px; */
+	font-size: clamp(0.875rem, 0.784rem + 0.45vw, 1.125rem);
+	text-align: center;
+	color: var(--primary-color);
+}
+
+.tag--white {
+	background: var(--white-transparent-2);
+	color: var(--background-color-1);
+}
+
+@media only screen and (max-width: 992px) {
+	.tag {
+		padding: 8px 12px;
+	}
+}

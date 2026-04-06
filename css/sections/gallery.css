@@ -1,0 +1,17 @@
+.gallery {
+	/* padding-top: 100px; */
+	padding-top: clamp(1.875rem, 0.284rem + 7.95vw, 6.25rem);
+	padding-bottom: 20px;
+}
+
+.gallery__header {
+	/* margin-bottom: 80px; */
+	margin-bottom: clamp(1.25rem, -0.114rem + 6.82vw, 5rem);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+
+	text-align: center;
+}
